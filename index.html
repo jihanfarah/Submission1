@@ -20,27 +20,31 @@
        </header>
 
     <main>
-       <div id="content">
-        <article id="homepage">
+      <article id="homepage" class="content-container">
+        <div class="text-content">
           <h1>Hello, Welcome to my website!</h1>
           <p>An IT Enthusiast based in Jakarta, Indonesia.</p>
-            <img src="assets/image/homepage.png" alt="homepage">
-        </article>
+        </div>
+        <div class="image-container">
+          <img class="home-image" src="assets/image/homepage.png" alt="homepage">
+        </div>
+      </article>
+
         <article id="project-list">
             <h2>Project Experience</h2>
             <section>
                 <h3>Data Analyst</h3>
                 <ul>
-                    <li>COVID-19 Analysis in South Kalimantan</li>
-                    <li>Business Decision Research</li>
-                    <li>Cyclistic Capstone Project</li>
-                    <li>Titanic Machine Learning</li>
+                    <li><a href="#">COVID-19 Analysis in South Kalimantan</a></li>
+                    <li><a href="#">Decision Research</a></li>
+                    <li><a href="#">Capstone Project</a></li>
+                    <li><a href="#">Machine Learning</a></li>
                 </ul>
             </section>
             <section>
                 <h3>Quality Assurance</h3>
                 <ul>
-                    <li>GOREST Automation Test</li>
+                    <li><a href="#">Automation Test</a></li>
                 </ul>
             </section>
         </article>
@@ -75,15 +79,19 @@
             </section>
         </article>
        </div>
+      </main>
 
        <aside>
-         <header>
+        <article>
+         <header class="profile">
             <figure>
-                <img src="assets/image/profile.png" alt="profile">
+              <img id="profile-img" src="assets/image/profile.png" alt="profile">
             </figure>
-            <h2>About Me</h2>
          </header>
-         <main>
+         
+         <section>
+            <article>
+            <h2>About Me</h2>
             <h3>Jihan Farah Salsabil</h3>
             <p>
                 A Bachelor of Science in Mathematics with keen interest in business analysis, data analytics and data science.
@@ -93,9 +101,9 @@
                 <li>LinkedIn: Jihan Farah Salsabil </li>
                 <li>Email: jfarahs@gmail.com </li>
             </ul>
-         </main>
+          </section>
+          </article>
        </aside>
-      </main>
   </body>
 
   <footer>
