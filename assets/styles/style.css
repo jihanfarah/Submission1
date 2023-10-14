@@ -1,76 +1,108 @@
-/* * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    box-sizing: border-box;
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-header {
-    height: 50px;
-    background-color: #0F2C59;
-    color: white;
+.navbar-container {
+  height: 50px;
+  background-color: #0F2C59;
+  color: white;
 }
 
 main {
-    float: left; 
-    width: 75%; 
-  }
-  
+  float: left;
+  width: 70%;
+}
 
-aside {
-    float: left; 
-    width: 25%; 
-  }
+#profile-img {
+  max-width: 100%; 
+  height: auto;
+}
 
-  #profile-img {
-    max-width: 100%; 
-    height: auto;
-  }
-
-  .container::after {
-    content: "";
-    display: table;
-    clear: both;
-  }  
-  
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .content-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-  }
-  
-  .text-content {
-    flex: 1; 
-  }
-  
-  .image-container {
-    flex: 0;
-    margin-left: 20px; 
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.text-content {
+  flex: 1; 
+}
+
+.image-container {
+  flex: 0;
+  margin-left: 20px; 
+}
 
 .nav-list ul li a { 
-    color: white;
+  color: white;
+}
+
+nav ul {
+  float: right;
 }
 
 nav li {
-    display: inline;
-    margin-left: 10px;
+  display: inline;
+  margin-right: 30px;
+  float: left;
+}
+
+#project-list div {
+  display: flex;
+}
+
+#project-list-body {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#project-list-body ul {
+  list-style-type: none;
 }
 
 #project-preview img{
-    height: 300px;
+  height: 300px;
 }
 
-.profile-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-  }
-  
- aside article {
-    width: 80%; 
-    max-width: 400px; 
-    text-align: center; 
-  }
-   */
+#project-preview div {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.profile {
+  display: inline-block;
+  justify-content: center; 
+  align-items: center;
+}
+
+aside {
+  float: right;
+  max-width: 400px; 
+  text-align: center;
+  width: 30%;
+  height: 100vh;
+  background-color: aqua;
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+footer {
+  float: left;
+  position: center;
+}
