@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1
+}
+
 .navbar-container {
   height: 50px;
   background-color: #0F2C59;
@@ -11,8 +24,9 @@
 }
 
 main {
-  float: left;
-  width: 70%;
+  flex: 1;
+  order: 1; /* Main content should come first */
+  background-color: #FFF2D8;
 }
 
 #profile-img {
@@ -46,13 +60,13 @@ main {
 }
 
 nav ul {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
 }
 
 nav li {
-  display: inline;
-  margin-right: 30px;
-  float: left;
+  padding: 20px;
 }
 
 #project-list div {
@@ -90,19 +104,44 @@ nav li {
 }
 
 aside {
-  float: right;
-  max-width: 400px; 
   text-align: center;
-  width: 30%;
   height: 100vh;
-  background-color: aqua;
+  background-color: #4B527E;
+  flex-direction: column;
+  justify-content: flex-end;
+  order: 2; /* Aside comes second */
+}
+
+aside p{
+  margin: 10px;
+  font-size: small;
+}
+
+aside h2{
+  font-size: larger;
+}
+
+aside h3{
+  font-size: medium;
+}
+
+aside img{
+  margin-top: 20px;
+  max-width: 100px;
 }
 
 aside ul {
-  list-style-type: none;
+  text-align: left;
+  font-size: small;
 }
 
 footer {
-  float: left;
-  position: center;
+  order: 3; 
+  margin-top: auto;
 }
+
+
+
+
+
+
