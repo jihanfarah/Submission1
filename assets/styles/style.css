@@ -13,7 +13,8 @@
 .column {
   display: flex;
   flex-direction: column;
-  flex: 1
+  flex: 1;
+  justify-content: center;
 }
 
 main {
@@ -67,12 +68,12 @@ header h2{
 
 .text-content {
   flex: 1; 
-  margin: 10px;
+  margin: 30px;
 }
 
 .image-container {
   flex: 0;
-  margin-left: 20px; 
+  margin-left: 30px;
 }
 
 .nav-list ul li a { 
